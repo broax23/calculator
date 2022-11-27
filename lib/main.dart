@@ -56,7 +56,7 @@ class _MyHomePageState extends State<MyHomePage> {
   final List buttons = [
     'C',
     'DEL',
-    '%',
+    '',
     '/',
     '9',
     '8',
@@ -72,7 +72,7 @@ class _MyHomePageState extends State<MyHomePage> {
     '+',
     '0',
     '.',
-    'ANS',
+    '',
     '=',
   ];
 
@@ -156,6 +156,15 @@ class _MyHomePageState extends State<MyHomePage> {
                           equalPressed();
                         });
                       },
+                    );
+                  } else if (index == 2) {
+                    //equal
+
+                    return MyButton(
+                      buttonColor: Colors.deepPurple,
+                      textColor: Colors.white,
+                      buttonText: buttons[index],
+                      buttonTapped: () {},
                     );
                   } else {
                     return MyButton(
